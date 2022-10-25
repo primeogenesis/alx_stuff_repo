@@ -1,5 +1,6 @@
 #include <stdlib.h>
 #include <time.h>
+#include <stdio.h>
 #define ARRAYSIZE 65
 #define NONNUM 'g'
 
