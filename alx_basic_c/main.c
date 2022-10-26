@@ -1,6 +1,13 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+/**
+* main - prints a-z and then newline
+* Description: did it with 1 putchar(),
+* 	gotta sacrifice simplicity though.
+* Return: 0 (Always)
+*/
+
 int main()
 {
 	int i;
@@ -20,6 +27,7 @@ int main()
 		}
 	}
 
+	return (0);
 	/*printf(" >%d to %d diff %d\n >%d to %d diff %d\n"
 			, 'a', 'z', 'a' - 'z', 'A', 'Z', 'A' - 'Z'); // bg
 	*/
