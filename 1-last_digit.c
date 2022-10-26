@@ -11,7 +11,26 @@
  * Return: void
  */
 
-void print_eval(int, long int);
+void print_eval(int n2, int long lastdigit2)
+	{
+		if (lastdigit2 == 0)
+		{
+			printf("Last digit of %d is %ld and is 0\n", n2, lastdigit2);
+		}
+		else if (lastdigit2 < 6)
+		{
+			printf("Last digit of %d is %ld and is less than 6 and not 0\n",
+					n2, lastdigit2);
+		}
+		else
+		{
+			printf("Last digit of %d is %ld and is greater than 5\n",
+					n2, lastdigit2);
+		}
+
+		return;
+
+	}
 
 /**
 * main - label random number
@@ -52,32 +71,3 @@ int main(void)
 	return (0);
 
 }
-
-
-/**
- *print_eval - stdout evaluation
- *@n2: takes random number
- *@lastdigit2: takes last digit
- * Return: void
- */
-
-void print_eval(int n2, int long lastdigit2)
-	{
-		if (lastdigit2 == 0)
-		{
-			printf("Last digit of %d is %ld and is 0\n", n2, lastdigit2);
-		}
-		else if (lastdigit2 < 6)
-		{
-			printf("Last digit of %d is %ld and is less than 6 and not 0\n",
-					n2, lastdigit2);
-		}
-		else
-		{
-			printf("Last digit of %d is %ld and is greater than 5\n",
-					n2, lastdigit2);
-		}
-
-		return;
-
-	}
