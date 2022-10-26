@@ -2,12 +2,12 @@
 #include <stdlib.h>
 
 /**
-* main - prints 'a'-'z' then 'A' - 'Z' and then newline
+* main - prints 'a'-'z' execept 'q' and 'e'
 *
 * Return: 0 (Always)
 */
 
-int main()
+int main(void)
 {
 	int i;
 
@@ -15,18 +15,11 @@ int main()
 
 	for (i = 'a'; i <= 'z'; i++)
 	{
-		putchar(i);
-	}
-
-	for (i = 'A'; i <= 'Z'; i++)
-	{
-		putchar(i);
+		if(i != 'e' && i != 'q' )
+			putchar(i);
 	}
 	putchar('\n');
 
 	return (0);
-/*	printf(" >%d to %d diff %d\n >%d to %d diff %d\n"
-*	, 'a', 'z', 'a' - 'z', 'A', 'Z', 'A' - 'Z'); // bg
-*/
 
 }
