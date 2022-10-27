@@ -10,12 +10,13 @@
 int main(void)
 {
 	int i;
+	int j = 'A';
 
 	/* ascii char 'a' is 97 which follow serially to char 'z' which 122 */
 
-	for (i = 'a'; i <= 'z'; i++)
+	for (i = '0'; i <= '9'; i++)
 	{
-		if(i != 'e' && i != 'q' )
+		if(i)
 			putchar(i);
 	}
 	putchar('\n');
